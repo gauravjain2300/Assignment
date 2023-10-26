@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>our-services</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .cooler {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        /* overflow: hidden; */
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .bg-1 {
+        width: 50%;
+        background-color: #202020;
+      }
+      .bg-2 {
+        width: 50%;
+        background: url(../../images/Put\ Your\ Image\ \(1\).png) no-repeat center center/cover;
+      }
+      .content-box {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        position: sticky;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+        gap: 20px;
+        text-transform: capitalize;
+        padding-right: 100px;
+        margin-right:50px;
+      }
+       .icons img {
+        width: 65px;
+        height: 65px;
+      } 
+      .gaurav {
+        margin-left: 73px;
+        position: relative;
+      }
+
+      .content-box h2 {
+        font-size: 36px;
+        color: #f4f5f9;
+        font-weight: 700;
+        
+        
+        align-self: end;
+        margin-bottom: 20px;
+      }
+      .mobile h3 {
+        font-size: 18px;
+        line-height: 29px;
+        color: #e74c3c;
+        
+        
+       
+        text-transform: uppercase;
+      }
+      .mobile p {
+        font-size: 14px;
+        line-height: 29px;
+        color: #999999;
+        font-weight: 400;
+        
+        text-align: right;
+      }
+       h2::after {
+        content: "";
+        height: 30px;
+        width: 5px;
+        background-color: #e74c3c;
+        display: inline-block;
+        margin-left: 20px;
+      } 
+      h2{padding-right: 100px;
+     margin-right:100px ;}
+    </style>
+  </head>
+  <body>
+    <div class="cooler">
+      <div class="bg-1"></div>
+      <div class="bg-2"></div>
+    </div>
+    <div class="gaurav">
+      <div class="content-box">
+        <h2>our services</h2>
+        
+        <div class="box">
+          <div class="mobile">
+            <h3>WEB DESIGNING</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text ever.</p>
+          </div>
+          <div class="icons">
+            <img src="../../images/Down Icon copy.png" alt="" />
+          </div>
+        </div>
+    
+        <div class="box">
+          <div class="mobile">
+            <h3>PRINT DESIGN</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text ever.</p>
+          </div>
+          <div class="icons">
+            <img src="../../images/Down Icon copy 2.png" alt="" />
+          </div>
+        </div>
+    
+        <div class="box">
+          <div class="mobile">
+            <h3>PHOTOGRAPHY</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text ever.</p>
+          </div>
+          <div class="icons">
+            <img src="../../images/Down Icon copy 3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
