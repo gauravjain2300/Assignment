@@ -1,0 +1,58 @@
+@media (max-width: 376px){
+   
+
+    /* nav{position: relative;
+    gap: 30px;}
+    
+    
+      .ol{
+      }
+        #check{display: block;}
+    
+    .bar{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+       }
+       
+      
+    
+    
+ul{
+        /* display: none; 
+        position: absolute;
+      top: 50px;
+     
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    display: none;
+    justify-content: end;
+    height: 300px;
+    
+    text-transform: uppercase;
+
+    justify-content: space-between;
+    
+     
+    }
+    #check:checked ~ ul{
+        display: block;
+        right: 0px;
+    } */
+    .paper{display: none;} 
+    h2{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 40px;
+text-align: center;
+color: #35414B;
+}
+.get{top: 0px;
+left: 0px;}
+
+
+}
