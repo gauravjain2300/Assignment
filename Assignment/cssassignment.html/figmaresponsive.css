@@ -1,58 +1,153 @@
-@media (max-width: 376px){
-   
+@media (max-width: 376px) {
+  nav {
+    position: relative;
+    gap: 30px;
+  }
 
-    /* nav{position: relative;
-    gap: 30px;}
-    
-    
-      .ol{
-      }
-        #check{display: block;}
-    
-    .bar{
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 20px;
-       }
-       
-      
-    
-    
-ul{
-        /* display: none; 
-        position: absolute;
-      top: 50px;
-     
+  .ol {
+  }
+  #check {
+    display: block;
+  }
+
+  .bar {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+
+  ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+
     gap: 50px;
     display: flex;
     flex-direction: row;
     display: none;
     justify-content: end;
     height: 300px;
-    
+
     text-transform: uppercase;
 
     justify-content: space-between;
-    
-     
-    }
-    #check:checked ~ ul{
-        display: block;
-        right: 0px;
-    } */
-    .paper{display: none;} 
-    h2{
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 40px;
-text-align: center;
-color: #35414B;
+  }
+  #check:checked ~ ul {
+    display: block;
+    right: 0px;
+  }
+
+  h2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #35414b;
+  }
+  .get {
+    top: 0px;
+    left: 0px;
+  }
 }
-.get{top: 0px;
-left: 0px;}
+.main-text {
+  text-align: center;
+}
+.save {
+  display: none;
+}
+.place {
+  width: 267px;
+  right: 36px;
+}
 
+.Try {
+  width: 267px;
+  /* top: 100px; */
+  /* top: 100px; */
+  right: 36px;
+  bottom: 360px;
+}
+.account {
+  text-align: center;
+  right: 65px;
+}
+.graph1 img {
+  width: 338px;
+}
 
+.trust {
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.table img {
+  width: 50px;
+}
+.group25 {
+  padding-left: 0;
+  width: 338px;
+}
+.container-1 {
+  flex-wrap: wrap;
+}
+.survey {
+  text-align: center;
+}
+
+.container-1 {
+  text-align: center;
+}
+.col-33 {
+  text-align: center;
+  gap: 50px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.graph2 {
+  width: 338px;
+}
+.container-1 {
+  flex-direction: column-reverse;
+}
+
+.main-text1 {
+  padding-left: 0px;
+
+  margin-left: 0px;
+
+  align-items: center;
+}
+
+.Getstartedfree {
+  width: 250px;
+  right: 70px;
+}
+.googl {
+  display: none;
+}
+h3 {
+  font-size: 30px;
+  line-height: 25px;
+}
+h3 + p {
+  font-size: 10px;
+  text-align: center;
+  line-height: 15px;
+}
+.Box {
+  font-size: 22px;
+  line-height: 25px;
+
+  text-align: center;
+  flex-wrap: wrap;
+}
+.footer {
+  flex-wrap: wrap;
+}
+.earbuds {
+  flex-wrap: wrap;
+  gap: 50px;
 }
