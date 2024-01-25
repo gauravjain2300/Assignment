@@ -1,101 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Display grid in CSS</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .parent{
-            background-color: black;
-            /* border: 10px solid black; */
-            color: aliceblue;
-            display: grid;
-            /* grid-template-columns can be used in two ways */
-            /* grid-template-columns:1fr 1fr 1fr; */
-            grid-template-columns:repeat(6,1fr);
-            grid-auto-rows: minmax(250px, 200px);
-            gap: 10px;
-            margin: 50px;
-        }
-        .box-1{
-            background: url(../../images/image1.webp) no-repeat center center/cover;
-            grid-column: 1/5;
-            grid-row: 1/2;
-        }
-        .box-2{
-            background: url(../../images/image2.jpg) no-repeat center center/100% 100%;
-            grid-column: 5/7;
-            grid-row: 1/2;
-        }
-        .box-3{
-            background: url(../../images/image3.jpg) no-repeat center center/100% 100%;
-            grid-column: 1/2;
-            grid-row: 2/3;
-        
-        }
-        .box-4{
-            background: url(../../images/image4.jpeg) no-repeat center center/cover;
-            grid-column: 2/6;
-            grid-row: 2/3;
-        }
-        .box-5{
-            background: url(../../images/image5.jpg) no-repeat center center/cover;
-            grid-column: 6/7;
-            grid-row: 2/3;
-        } 
-        .box-6{
-            background: url(../../images/image6.webp) no-repeat center center/100% 100%;
-            grid-column: 1/4;
-            grid-row: 3/4;
-        } 
-        .box-7{
-            background: url(../../images/image7.webp) no-repeat center center/cover;
-            grid-column: 4/7;
-            grid-row: 3/4;
-        } 
-        .box-8{
-            background: url(../../images/baby.jpg) no-repeat center center/cover;
-            grid-column: 1/3;
-            grid-row: 4/5;
-        } 
-        .box-9{
-            background: url(../../images/baby.jpg) no-repeat center center/cover;
-            grid-column: 3/5;
-            grid-row: 4/5;
-        } 
-        .box-10{
-            background: url(../../images/image10.jpeg) no-repeat center center/cover;
-            grid-column:5/7 ;
-            grid-row: 4/5;
-        }
-
-
-      
-
-
-
-
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        background-color: black;
+        /* border: 10px solid black; */
+        color: aliceblue;
+        display: grid;
+        /* grid-template-columns can be used in two ways */
+        /* grid-template-columns:1fr 1fr 1fr; */
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(250px, 200px);
+        gap: 10px;
+        margin: 50px;
+      }
+      .box-1 {
+        background: url(../../images/image1.webp) no-repeat center center/cover;
+        grid-column: 1/5;
+        grid-row: 1/2;
+      }
+      .box-2 {
+        background: url(../../images/image2.jpg) no-repeat center center/100%
+          100%;
+        grid-column: 5/7;
+        grid-row: 1/2;
+      }
+      .box-3 {
+        background: url(../../images/image3.jpg) no-repeat center center/100%
+          100%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      .box-4 {
+        background: url(../../images/image4.jpeg) no-repeat center center/cover;
+        grid-column: 2/6;
+        grid-row: 2/3;
+      }
+      .box-5 {
+        background: url(../../images/image5.jpg) no-repeat center center/cover;
+        grid-column: 6/7;
+        grid-row: 2/3;
+      }
+      .box-6 {
+        background: url(../../images/image6.webp) no-repeat center center/100%
+          100%;
+        grid-column: 1/4;
+        grid-row: 3/4;
+      }
+      .box-7 {
+        background: url(../../images/image7.webp) no-repeat center center/cover;
+        grid-column: 4/7;
+        grid-row: 3/4;
+      }
+      .box-8 {
+        background: url(../../images/baby.jpg) no-repeat center center/cover;
+        grid-column: 1/3;
+        grid-row: 4/5;
+      }
+      .box-9 {
+        background: url(../../images/baby.jpg) no-repeat center center/cover;
+        grid-column: 3/5;
+        grid-row: 4/5;
+      }
+      .box-10 {
+        background: url(../../images/image10.jpeg) no-repeat center center/cover;
+        grid-column: 5/7;
+        grid-row: 4/5;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="parent">
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-3"></div>
-            <div class="box-4"></div>
-            <div class="box-5"></div>
-            <div class="box-6"></div>
-            <div class="box-7"></div>
-            <div class="box-8"></div>
-            <div class="box-9"></div>
-            <div class="box-10"></div>
-        </div>
+      <div class="parent">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+        <div class="box-6"></div>
+        <div class="box-7"></div>
+        <div class="box-8"></div>
+        <div class="box-9"></div>
+        <div class="box-10"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
