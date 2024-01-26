@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin: 0 auto;
+        justify-content: center;
+
+        height: 500px;
+        align-items: center;
+
+        width: 40%;
+        border: 5px solid black;
+        text-align: center;
+
+        gap: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Maths operation</h2>
+      <label for="">Enter 1st number:</label
+      ><input type="text" value="" id="mobile" />
+      <br />
+      <label for="">Enter 2nd number:</label
+      ><input type="text" value="" id="mobile-1" />
+      <br />
+
+      <button id="total" onclick="add()">+</button>
+      <button id="total" onclick="min()">-</button>
+      <button id="total" onclick="gaurav()">*</button>
+      <button id="total" onclick="gaurav()">/</button>
+
+      <br />
+      <input type="text" id="result" />
+    </div>
+
+    <script>
+      function add() {
+        let a = parseFloat(document.getElementById("mobile").value);
+        let b = parseFloat(document.getElementById("mobile-1").value);
+        let total = a + b;
+        document.getElementById("result").value = total;
+      }
+
+      function min() {
+        let a = parseFloat(document.getElementById("mobile").value);
+        let b = parseFloat(document.getElementById("mobile-1").value);
+        let total = a - b;
+        document.getElementById("result").value = total;
+      }
+
+      function gaurav() {
+        let a = parseFloat(document.getElementById("mobile").value);
+        let b = parseFloat(document.getElementById("mobile-1").value);
+        let total = a * b;
+        document.getElementById("result").value = total;
+      }
+      function gaurav() {
+        let a = parseFloat(document.getElementById("mobile").value);
+        let b = parseFloat(document.getElementById("mobile-1").value);
+        let total = a / b;
+        document.getElementById("result").value = total;
+      }
+    </script>
+  </body>
+</html>

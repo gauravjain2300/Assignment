@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div class="border">
+          <img src="../images/Instagram_logo.svg.png" alt="" />
+          <div>
+            <form action="">
+              <label for="username"></label>
+
+              <input
+                type="password"
+                placeholder="password"
+                id="password"
+                onclick="
+                    pass()"
+              />
+              <span id="show" onclick="show()">Show</span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function pass() {
+        document.getElementById("show").style.display = "block";
+      }
+      function show() {
+        let userp = document.getElementById("password");
+
+        if (userp.type === "password") {
+          userp.type = "text";
+          document.getElementById("show").innerText = "Hide";
+        } else {
+          userp.type = "password";
+          document.getElementById("show").innerText = "show";
+        }
+      }
+    </script>
+  </body>
+</html>
