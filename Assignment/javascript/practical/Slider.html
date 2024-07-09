@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        /* background-image: url(../images/blob-scene-haikei.png); */
+        background-color: black;
+      }
+      .slider {
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        width: 90%;
+        margin-top: 50px;
+        margin-left: 70px;
+
+        height: 500px;
+
+        border: 2px solid white;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      .slide {
+        width: 100%;
+      }
+      .navigation {
+        position: absolute;
+        top: 40%;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        gap: 1000px;
+      }
+      i {
+        font-size: 30px;
+
+        color: white;
+        font-weight: 900;
+      }
+      button {
+        border: 0px;
+        background-color: transparent;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slides">
+        <img
+          src="../images/pexels-philippe-donn-1114690.jpg"
+          alt=""
+          class="slide"
+        />
+        <img src="../images/slider2.jpg" alt="" class="slide" />
+        <img src="../images/slider3.jpg" alt="" class="slide" />
+      </div>
+    </div>
+
+    <div class="navigation">
+      <button class="prev"><i class="bi bi-chevron-compact-left"></i></button>
+      <button class="Next"><i class="bi bi-chevron-compact-right"></i></button>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let slides = document.querySelector(".slides");
+        let sliderImages = document.querySelectorAll(".slide");
+        let prevButton = document.querySelector(".prev");
+        let nextButton = document.querySelector(".Next");
+
+        let currentIndex = 0;
+        function showSlide(index) {
+          slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        prevButton.addEventListener("click", function () {
+          currentIndex =
+            currentIndex > 0 ? currentIndex - 1 : sliderImages.length - 1;
+          showSlide(currentIndex);
+        });
+
+        nextButton.addEventListener("click", function () {
+          currentIndex =
+            currentIndex < sliderImages.length - 1 ? currentIndex + 1 : 0;
+          showSlide(currentIndex);
+        });
+      });
+    </script>
+  </body>
+</html>
